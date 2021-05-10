@@ -20,11 +20,7 @@ namespace TaskList.Controllers
 
         public IActionResult Index()
         {
-            var model = new TaskViewModel
-            {
-                UserEmail = User.Identity.Name
-            };
-            return View(model);
+            return View();
         }
 
         public IActionResult Privacy()
